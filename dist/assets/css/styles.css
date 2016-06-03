@@ -1,0 +1,627 @@
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+  position: relative;
+}
+
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden], template {
+  display: none;
+}
+
+a {
+  background: 0 0;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: 700;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+/*-----------------------------------------------------------------
+    | FONTS
+-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------
+    | COLORS
+-----------------------------------------------------------------*/
+/*$green: rgb(135,211,0);
+$lgreen: rgb(135,211,134);
+
+$grey: rgb(236,240,241);
+$dgrey: rgb(100,100,100);
+$orange: rgb(253,227,167);*/
+/*-----------------------------------------------------------------
+    | MIXINS
+-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------
+    | TEXT
+-----------------------------------------------------------------*/
+h1 {
+  margin: 0 !important;
+  font-size: 4.5em;
+  line-height: 1 !important;
+  /*text-shadow: 2px 3px 0px #333e48;*/
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  margin-top: 2rem;
+  margin-right: 2rem;
+  color: #000000;
+}
+
+i {
+  margin-right: 1rem;
+}
+
+a:hover, a:active {
+  text-decoration: none;
+  color: #000000;
+}
+
+/*-----------------------------------------------------------------
+    | BUTTONS
+-----------------------------------------------------------------*/
+.btn {
+  padding: 1rem 8rem;
+  background-color: #fae623;
+  font-size: 2em;
+  color: #000000;
+  transition: all .3s ease-in;
+}
+.btn:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+/*-----------------------------------------------------------------
+	| PRELOADER
+-----------------------------------------------------------------*/
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1040;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #000000 url("../../../ajax-loader.gif") no-repeat center center;
+}
+
+/*-----------------------------------------------------------------
+    | RIBBON
+-----------------------------------------------------------------*/
+.ribbon {
+  width: 100%;
+  height: 15px;
+  background: url("../../../pattern.png") repeat;
+}
+
+/*-----------------------------------------------------------------
+    | MESSAGES
+-----------------------------------------------------------------*/
+/*- Backup messages -*/
+.message {
+  margin-bottom: 0;
+  padding: 2rem 5rem 1rem 5rem;
+  background-color: #f64747;
+  color: #fff;
+  font-size: 2rem;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+/*-----------------------------------------------------------------
+	| COLOR CLASSES
+-----------------------------------------------------------------*/
+/*.text-white {
+	color: $white !important;
+}
+.text-grey {
+	color: $sec-color;
+}
+.text-main-color {
+	color: $main-color;
+}
+*/
+/*-----------------------------------------------------------------
+	| DISPLAY CLASSES
+-----------------------------------------------------------------*/
+.inline-me {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mt-1 {
+  margin-top: 1rem !important;
+}
+
+.mb-2 {
+  margin-bottom: 2rem !important;
+}
+
+/*-----------------------------------------------------------------
+	| TEXT CLASSES
+-----------------------------------------------------------------*/
+.header-font {
+  font-family: "Teko", Arial, sans-serif;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/*@import 'style1';*/
+* {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+@viewport {
+  zoom: 1.0;
+  width: extend-to-zoom;
+}
+@-ms-viewport {
+  zoom: 1.0;
+  width: extend-to-zoom;
+}
+header, nav, main, section, article, aside, footer, div, ul, ol, li, a, p, h1, h2, h3, h4, h5, h6 {
+  display: block;
+}
+
+/*-- Fix Safari horizontal scroll --*/
+html, body {
+  overflow-x: hidden;
+}
+
+html {
+  min-width: 20em;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  line-height: 1.4;
+  font-weight: 300;
+  color: #000000;
+}
+
+/*-- Fix for odd Mozilla border & padding issues --*/
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.glyphicon:not(.glyphicon-chevron-down) {
+  margin-right: 1rem;
+}
+
+.look-at-me {
+  position: absolute;
+  left: 47%;
+  bottom: 10%;
+}
+
+.glyphicon-chevron-down {
+  color: #fae623;
+  padding: 1em;
+  border: 2px solid #fae623;
+  border-radius: 100%;
+  animation-name: move;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.glyphicon-chevron-down:before {
+  font-size: 2em !important;
+  line-height: 1em !important;
+}
+
+@keyframes move {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 7px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+/*-----------------------------------------------------------------
+    | HEADER STYLES
+-----------------------------------------------------------------*/
+/*.navbar {
+    z-index: 10;
+    margin-bottom: 0 !important;
+    padding: 1rem 0;
+    background-color: $white;
+    color: $text-color;
+    border-radius: 0 !important;
+    -webkit-box-shadow: 0px 7px 7px -6px rgba(0,0,0,0.83);
+    -moz-box-shadow: 0px 7px 7px -6px rgba(0,0,0,0.83);
+    box-shadow: 0px 7px 7px -6px rgba(0,0,0,0.83);
+}*/
+img {
+  width: 100%;
+}
+
+.phone-number {
+  font-family: "Teko", Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+/*-----------------------------------------------------------------
+    | MAIN STYLES
+-----------------------------------------------------------------*/
+/*main {
+    background-color: $white;
+}*/
+section:not(.main-image) {
+  padding: 5em 0 6em;
+  border-top: 1px dashed #fae623;
+}
+
+/* Top */
+.main-image {
+  background: url("../../../bgp3.jpg") no-repeat center;
+  background-size: 100% auto;
+  min-height: 900px;
+  /*    img {
+          margin-top: 2em;
+      }*/
+}
+
+/* Services */
+#services ul li {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.well {
+  margin-bottom: 8px;
+  padding: 10px 19px;
+}
+
+/*
+#materialbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $sec-color;
+    z-index: 999;
+    will-change: opacity;
+}
+img.materialboxed {
+    border: 2px solid #e3e3e3;
+    cursor: pointer;
+    transition: border-color .3s;
+
+    &:hover {
+        border-color: $main-color;
+    }
+}*/
+/* CTA */
+/*.icon {
+    margin: 2em auto 0;
+    width: 130px;
+    height: 178.50px;
+    background: url('../../../sprite1.png') top center;
+}
+#contact-us img {
+    margin-top: 13em;
+}*/
+/*-----------------------------------------------------------------
+    | FOOTER STYLES
+-----------------------------------------------------------------*/
+footer {
+  padding: 1em 0;
+}
+footer p {
+  margin-bottom: 0;
+}
+footer img {
+  margin-bottom: .25em;
+  margin-left: 1em;
+}
+
+.small-link {
+  font-size: .7em;
+}
+
+/*-----------------------------------------------------------------
+    | XS
+-----------------------------------------------------------------*/
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  /*	.logo {
+  		font-size: 2rem;
+  		line-height: 2.2rem;
+  	}*/
+  /*	.center-me-on-mobile {
+  		text-align: center;
+  	}
+  	.call-to-action {
+  		padding: 0 1rem;
+  		font-size: 3rem;
+  		line-height: 3rem;
+  		text-align: center;
+  
+  		span {
+  			margin-left: 0;
+  			font-size: 3rem;
+  		}
+  	}*/
+  /*	.main-button {
+  		width: 90%;
+      	margin: 2rem auto;
+      	padding: .9rem;
+  	}
+  	.about-company {
+  		font-size: 1.6rem;
+  		line-height: 1.8rem;
+  	}*/
+  /*	.no-pad-r {
+  		padding-right: 0 !important;
+  	}*/
+  .fa-check {
+    margin-right: 0;
+  }
+}
+/*-----------------------------------------------------------------
+    | SM
+-----------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 992px) {
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  /*	.logo {
+  		font-size: 2.4rem;
+  	}
+  	.call-to-action {
+  		font-size: 3rem;
+  		line-height: 3rem;
+  
+  		span {
+  			margin-left: 0;
+  			font-size: 3.2rem;
+  		}
+  	}*/
+  .main-button {
+    width: 90%;
+    padding: 1.1rem;
+  }
+}
+/*-----------------------------------------------------------------
+    | MD
+-----------------------------------------------------------------*/
+@media (min-width: 992px) and (max-width: 1200px) {
+  .call-to-action {
+    font-size: 3.8rem;
+  }
+  .call-to-action span {
+    margin-left: 0;
+    font-size: 4.2rem;
+  }
+}
+@media (max-width: 1500px) {
+  .main-image {
+    min-height: 670px !important;
+  }
+}
+@media (max-width: 1160px) {
+  .main-image {
+    background-size: auto 100% !important;
+  }
+}
+@media (min-width: 1500px) {
+  img.logo {
+    width: 79% !important;
+  }
+}

@@ -1,0 +1,88 @@
+/*-----------------------------------------------------------------
+    | TEXT
+-----------------------------------------------------------------*/
+h1 {
+	margin: 0 !important;
+	font-size: 4.5em;
+    line-height: 1 !important;
+	/*text-shadow: 2px 3px 0px #333e48;*/
+}
+h2 {
+	font-size: 1.8em;
+}
+h3 {
+	margin: 0;
+}
+h4 {
+	margin-top: 2rem;
+	margin-right: 2rem;
+	color: $text-color;
+}
+i {
+	margin-right: 1rem;
+}
+a:hover, a:active {
+	text-decoration: none;
+	color: $text-color;
+}
+
+
+/*-----------------------------------------------------------------
+    | BUTTONS
+-----------------------------------------------------------------*/
+.btn {
+    padding: 1rem 8rem;
+    background-color: $main-color;
+
+    font-size: 2em;
+    color: $text-color;
+
+    transition: all .3s ease-in;
+
+    &:hover {
+        background-color: $text-color;
+        color: $white;
+    }
+}
+
+
+/*-----------------------------------------------------------------
+	| PRELOADER
+-----------------------------------------------------------------*/
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1040;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: $text-color url('../../../ajax-loader.gif') no-repeat center center;
+}
+
+/*-----------------------------------------------------------------
+    | RIBBON
+-----------------------------------------------------------------*/
+.ribbon {
+	width: 100%;
+    height: 15px;
+    background: url('../../../pattern.png') repeat;
+}
+
+
+
+/*-----------------------------------------------------------------
+    | MESSAGES
+-----------------------------------------------------------------*/
+/*- Backup messages -*/
+.message {
+    margin-bottom: 0;
+    padding: 2rem 5rem 1rem 5rem;
+    background-color: $red;
+    color: $white;
+
+    font-size: 2rem;
+    font-family: $main-font;
+	font-weight: 400;
+    line-height: 3rem;
+}

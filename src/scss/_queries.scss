@@ -1,0 +1,100 @@
+/*-----------------------------------------------------------------
+    | XS
+-----------------------------------------------------------------*/
+@media(max-width: 768px) {
+	h2 {
+		font-size: 2.5rem;
+	}
+	h3 {
+		font-size: 16px;
+	}
+/*	.logo {
+		font-size: 2rem;
+		line-height: 2.2rem;
+	}*/
+/*	.center-me-on-mobile {
+		text-align: center;
+	}
+	.call-to-action {
+		padding: 0 1rem;
+		font-size: 3rem;
+		line-height: 3rem;
+		text-align: center;
+
+		span {
+			margin-left: 0;
+			font-size: 3rem;
+		}
+	}*/
+/*	.main-button {
+		width: 90%;
+    	margin: 2rem auto;
+    	padding: .9rem;
+	}
+	.about-company {
+		font-size: 1.6rem;
+		line-height: 1.8rem;
+	}*/
+/*	.no-pad-r {
+		padding-right: 0 !important;
+	}*/
+	.fa-check {
+		margin-right: 0;
+	}
+}
+
+
+/*-----------------------------------------------------------------
+    | SM
+-----------------------------------------------------------------*/
+@media(min-width: 768px) and (max-width: 992px) {
+	h3 {
+		font-size: 1.8rem;
+	}
+/*	.logo {
+		font-size: 2.4rem;
+	}
+	.call-to-action {
+		font-size: 3rem;
+		line-height: 3rem;
+
+		span {
+			margin-left: 0;
+			font-size: 3.2rem;
+		}
+	}*/
+	.main-button {
+		width: 90%;
+		padding: 1.1rem;
+	}
+}
+
+/*-----------------------------------------------------------------
+    | MD
+-----------------------------------------------------------------*/
+@media(min-width: 992px) and (max-width: 1200px) {
+	.call-to-action {
+		font-size: 3.8rem;
+
+		span {
+			margin-left: 0;
+			font-size: 4.2rem;
+		}
+	}
+}
+
+@media(max-width: 1500px) {
+	.main-image {
+		min-height: 670px !important;
+	}
+}
+@media(max-width: 1160px) {
+	.main-image {
+		background-size: auto 100% !important;
+	}
+}
+@media(min-width: 1500px) {
+	img.logo {
+		width: 79% !important;
+	}
+}

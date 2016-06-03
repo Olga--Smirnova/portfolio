@@ -1,0 +1,49 @@
+/*-----------------------------------------------------------------
+	| COLOR CLASSES
+-----------------------------------------------------------------*/
+/*.text-white {
+	color: $white !important;
+}
+.text-grey {
+	color: $sec-color;
+}
+.text-main-color {
+	color: $main-color;
+}
+*/
+
+
+/*-----------------------------------------------------------------
+	| DISPLAY CLASSES
+-----------------------------------------------------------------*/
+.inline-me {
+	float: none;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+.mt-1 {
+	margin-top: 1rem !important;
+}
+.mb-2 {
+	margin-bottom: 2rem !important;
+}
+
+
+
+/*-----------------------------------------------------------------
+	| TEXT CLASSES
+-----------------------------------------------------------------*/
+.header-font {
+	font-family: $sec-font;
+}
+.fw-400 {
+	font-weight: 400 !important;
+}
+.fw-600 {
+	font-weight: 600 !important;
+}
+.uppercase {
+	text-transform: uppercase;
+}
