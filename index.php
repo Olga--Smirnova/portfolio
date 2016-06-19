@@ -89,9 +89,9 @@
 
 
 <!--================== Main =================================================-->
-	<main>
-		<section class="row">
-			<h1></h1>
+	<main class="container">
+		<section class="row" id="top">
+			<h1 class="ticker"></h1>
 		</section>
 
 

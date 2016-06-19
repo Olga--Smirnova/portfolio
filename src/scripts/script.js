@@ -27,10 +27,7 @@ document.addEventListener("DOMContentLoaded",function(){
 ----------------------------------------------------------------------------------*/
     if(( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) || $(window).innerWidth() <= 768)
     {
-        $('h5.align-me-right').removeClass('align-me-right');
 
-        // To make the links open on the same window on mobile
-        $('a').attr('target', '_self'); 
 
     }
 
@@ -65,6 +62,33 @@ document.addEventListener("DOMContentLoaded",function(){
     });
 
 
+
+/*----------------------------------------------------------------------------------
+    |
+    | typed.js
+    | source: http://www.mattboldt.com/demos/typed-js/
+    |
+----------------------------------------------------------------------------------*/
+    $(".ticker").typed(
+    {
+        strings: [  "The web devepoler<br/>you were looking for<br/>is <a href=\"\" class=\"ticker-link\">here</..",
+                    "This is the <strong class=\"ticker-link\">right</strong> place<br/>to find a good web developer.",
+                    "Looking for a pationate web developer?<br>You came to the right place!"
+                    ],
+        typeSpeed: 50,
+        // backspacing speed
+        backSpeed: 30,
+        // time before backspacing
+        backDelay: 100,
+        // loop
+        loop: false,
+        // false = infinite
+        loopCount: false,
+        // show cursor
+        showCursor: true,
+        // character for cursor
+        cursorChar: "|",
+    });
 
 
 /*----------------------------------------------------------------------------------
