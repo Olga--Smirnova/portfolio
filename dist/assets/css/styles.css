@@ -191,12 +191,6 @@ td, th {
 /*-----------------------------------------------------------------
     | COLORS
 -----------------------------------------------------------------*/
-/*$green: rgb(135,211,0);
-$lgreen: rgb(135,211,134);
-
-$grey: rgb(236,240,241);
-$dgrey: rgb(100,100,100);
-$orange: rgb(253,227,167);*/
 /*-----------------------------------------------------------------
     | MIXINS
 -----------------------------------------------------------------*/
@@ -263,15 +257,6 @@ a:hover, a:active {
 }
 
 /*-----------------------------------------------------------------
-    | RIBBON
------------------------------------------------------------------*/
-.ribbon {
-  width: 100%;
-  height: 15px;
-  background: url("../../../pattern.png") repeat;
-}
-
-/*-----------------------------------------------------------------
     | MESSAGES
 -----------------------------------------------------------------*/
 /*- Backup messages -*/
@@ -335,7 +320,6 @@ a:hover, a:active {
   text-transform: uppercase;
 }
 
-/*@import 'style1';*/
 * {
   padding: 0;
   margin: 0;
@@ -382,151 +366,15 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-.row {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-
-.glyphicon:not(.glyphicon-chevron-down) {
-  margin-right: 1rem;
-}
-
-.look-at-me {
-  position: absolute;
-  left: 47%;
-  bottom: 10%;
-}
-
-.glyphicon-chevron-down {
-  color: #fae623;
-  padding: 1em;
-  border: 2px solid #fae623;
-  border-radius: 100%;
-  animation-name: move;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-}
-.glyphicon-chevron-down:before {
-  font-size: 2em !important;
-  line-height: 1em !important;
-}
-
-@keyframes move {
-  0% {
-    top: 0px;
-  }
-  50% {
-    top: 7px;
-  }
-  100% {
-    top: 0px;
-  }
-}
 /*-----------------------------------------------------------------
     | HEADER STYLES
 -----------------------------------------------------------------*/
-/*.navbar {
-    z-index: 10;
-    margin-bottom: 0 !important;
-    padding: 1rem 0;
-    background-color: $white;
-    color: $text-color;
-    border-radius: 0 !important;
-    -webkit-box-shadow: 0px 7px 7px -6px rgba(0,0,0,0.83);
-    -moz-box-shadow: 0px 7px 7px -6px rgba(0,0,0,0.83);
-    box-shadow: 0px 7px 7px -6px rgba(0,0,0,0.83);
-}*/
-img {
-  width: 100%;
-}
-
-.phone-number {
-  font-family: "Teko", Arial, sans-serif;
-  font-size: 3rem;
-  font-weight: 700;
-  color: #000000;
-}
-
 /*-----------------------------------------------------------------
     | MAIN STYLES
 -----------------------------------------------------------------*/
-/*main {
-    background-color: $white;
-}*/
-section:not(.main-image) {
-  padding: 5em 0 6em;
-  border-top: 1px dashed #fae623;
-}
-
-/* Top */
-.main-image {
-  background: url("../../../bgp3.jpg") no-repeat center;
-  background-size: 100% auto;
-  min-height: 900px;
-  /*    img {
-          margin-top: 2em;
-      }*/
-}
-
-/* Services */
-#services ul li {
-  font-size: 1.1em;
-  font-weight: 500;
-}
-
-.well {
-  margin-bottom: 8px;
-  padding: 10px 19px;
-}
-
-/*
-#materialbox-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: $sec-color;
-    z-index: 999;
-    will-change: opacity;
-}
-img.materialboxed {
-    border: 2px solid #e3e3e3;
-    cursor: pointer;
-    transition: border-color .3s;
-
-    &:hover {
-        border-color: $main-color;
-    }
-}*/
-/* CTA */
-/*.icon {
-    margin: 2em auto 0;
-    width: 130px;
-    height: 178.50px;
-    background: url('../../../sprite1.png') top center;
-}
-#contact-us img {
-    margin-top: 13em;
-}*/
 /*-----------------------------------------------------------------
     | FOOTER STYLES
 -----------------------------------------------------------------*/
-footer {
-  padding: 1em 0;
-}
-footer p {
-  margin-bottom: 0;
-}
-footer img {
-  margin-bottom: .25em;
-  margin-left: 1em;
-}
-
-.small-link {
-  font-size: .7em;
-}
-
 /*-----------------------------------------------------------------
     | XS
 -----------------------------------------------------------------*/

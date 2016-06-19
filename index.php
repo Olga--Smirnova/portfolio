@@ -6,7 +6,7 @@
 <head>
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<meta name="description" content="">
-	<meta name="keywords" content=""/>
+	<meta name="keywords" content="Olga Smirnova, web developer Auckland, web developer new zealand, front end Auckland, front end developer Auckland, java script developer Auckland, logo design Auckland"/>
 	<meta name="robots" content="index, follow" />
 	<meta charset="utf-8" />
 
@@ -90,6 +90,42 @@
 
 <!--================== Main =================================================-->
 	<main>
+		<section class="row">
+			<h1></h1>
+		</section>
+
+
+	<!-- About Page -->
+		<section class="row" id="about">
+			<h2>ABOUT</h2>
+
+		<!-- Image -->
+			<div class="col-xs-12 col-md-6">
+			</div>
+
+		<!-- About text -->
+			<div class="col-xs-12 col-md-6">
+			</div>
+		</section>
+
+	<!-- Portfolio Page -->
+		<section class="row" id="portfolio">
+			<h2>PORTFOLIO</h2>
+		</section>
+
+	<!-- Contacts Page -->
+		<section class="row" id="contacts">
+			<h2>CONTACTS</h2>
+	
+		<!-- All contacts -->
+			<div class="col-xs-12 col-md-6">
+			</div>
+
+		<!-- Form -->
+			<div class="col-xs-12 col-md-6">
+			</div>
+
+		</section>
 	</main>
 
 
