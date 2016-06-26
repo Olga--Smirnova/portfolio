@@ -8,23 +8,19 @@ h1 {
 	/*text-shadow: 2px 3px 0px #333e48;*/
 }
 h2 {
-	font-size: 1.8em;
+    margin-top: 0 !important;
+	font-size: 4em;
 }
 h3 {
-	margin: 0;
+
 }
 h4 {
-	margin-top: 2rem;
-	margin-right: 2rem;
-	color: $text-color;
+
 }
 i {
 	margin-right: 1rem;
 }
-a:hover, a:active {
-	text-decoration: none;
-	color: $text-color;
-}
+
 
 
 /*-----------------------------------------------------------------

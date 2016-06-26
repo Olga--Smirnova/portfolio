@@ -62,6 +62,11 @@ document.addEventListener("DOMContentLoaded",function(){
     });
 
 
+/*----------------------------------------------------------------------------------
+    | GALLERY
+----------------------------------------------------------------------------------*/
+  new GridFx(document.querySelector('.grid'));
+
 
 /*----------------------------------------------------------------------------------
     |
@@ -69,26 +74,26 @@ document.addEventListener("DOMContentLoaded",function(){
     | source: http://www.mattboldt.com/demos/typed-js/
     |
 ----------------------------------------------------------------------------------*/
-    $(".ticker").typed(
-    {
-        strings: [  "The web devepoler<br/>you were looking for<br/>is <a href=\"\" class=\"ticker-link\">here</..",
-                    "This is the <strong class=\"ticker-link\">right</strong> place<br/>to find a good web developer.",
-                    "Looking for a pationate web developer?<br>You came to the right place!"
-                    ],
-        typeSpeed: 50,
-        // backspacing speed
-        backSpeed: 30,
-        // time before backspacing
-        backDelay: 100,
-        // loop
-        loop: false,
-        // false = infinite
-        loopCount: false,
-        // show cursor
-        showCursor: true,
-        // character for cursor
-        cursorChar: "|",
-    });
+    // $(".ticker").typed(
+    // {
+    //     strings: [  "The web devepoler<br/>you were looking for<br/>is <strong class='ticker-link'>here</strong>",
+    //                 "This is the <strong class='ticker-link'>right</strong> place<br/>to find a good web developer.",
+    //                 "Looking for a pationate web developer?<br>You came to the right place!"
+    //                 ],
+    //     typeSpeed: 50,
+    //     // backspacing speed
+    //     backSpeed: 30,
+    //     // time before backspacing
+    //     backDelay: 10,
+    //     // loop
+    //     loop: false,
+    //     // false = infinite
+    //     loopCount: false,
+    //     // show cursor
+    //     showCursor: true
+    //     // character for cursor
+    //     //cursorChar: "|",
+    // });
 
 
 /*----------------------------------------------------------------------------------

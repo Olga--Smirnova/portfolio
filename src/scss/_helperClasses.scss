@@ -1,16 +1,21 @@
 /*-----------------------------------------------------------------
 	| COLOR CLASSES
 -----------------------------------------------------------------*/
-/*.text-white {
-	color: $white !important;
+.text-color {
+	color: $text-color;
 }
-.text-grey {
-	color: $sec-color;
+.main-color-bg {
+	background-color: $main-color;
 }
-.text-main-color {
-	color: $main-color;
+
+.header-one {
+	color: $blue;
+    text-shadow: -4px 5px 0 $red;
 }
-*/
+.header-two {
+	color: $blue;
+    text-shadow: -4px 5px 0 $white;
+}
 
 
 /*-----------------------------------------------------------------
@@ -35,15 +40,26 @@
 /*-----------------------------------------------------------------
 	| TEXT CLASSES
 -----------------------------------------------------------------*/
-.header-font {
-	font-family: $sec-font;
+.main-font {
+	/*font-family: 'Muli', sans-serif;*/
+	font-family: 'Dosis', sans-serif;
 }
-.fw-400 {
-	font-weight: 400 !important;
+.sec-font {
+	/*font-family: 'Philosopher', sans-serif;*/
+	font-family: 'Montserrat', sans-serif;
 }
-.fw-600 {
-	font-weight: 600 !important;
+.fw-700 {
+	font-weight: 700 !important;
 }
 .uppercase {
 	text-transform: uppercase;
+}
+
+
+.text-link {
+	text-decoration: underline;
+
+	&:hover, &:active {
+		text-decoration: none;
+	}
 }
