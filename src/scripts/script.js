@@ -20,7 +20,10 @@ document.addEventListener("DOMContentLoaded",function(){
         $('#operamini').show(); 
     }
 
-
+/*----------------------------------------------------------------------------------
+    | ANGULAR
+----------------------------------------------------------------------------------*/
+    // var app = angular.module('portfolio', []);
 
 /*----------------------------------------------------------------------------------
     | SOME MOBILE STYLES
@@ -64,8 +67,15 @@ document.addEventListener("DOMContentLoaded",function(){
 
 /*----------------------------------------------------------------------------------
     | GALLERY
+    | source: https://github.com/codrops/GridLoadingEffects
+    |
 ----------------------------------------------------------------------------------*/
-  new GridFx(document.querySelector('.grid'));
+
+    new AnimOnScroll( document.getElementById( 'grid' ), {
+        minDuration : 0.4,
+        maxDuration : 0.7,
+        viewportFactor : 0.2
+    } );
 
 
 /*----------------------------------------------------------------------------------

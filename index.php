@@ -24,8 +24,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Dosis|Montserrat:700" rel="stylesheet">
 
 	<link href="dist/assets/css/styles.min.css" rel="stylesheet" type="text/css">
-
+	
+	<script src="js/modernizr.custom.js"></script>
+<!-- AngularJS -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
 </head>
+
 
 <!--================== Preloader ==============================================-->
 <noscript>
@@ -36,7 +40,7 @@
 	</div>
 </noscript>
 
-<body class="main-font">
+<body class="main-font" ng-app="portfolio">
 
 <!--================== Backups =================================================-->
 <!--[if lte IE 9]>
@@ -101,7 +105,7 @@
 
 
 	<!-- About Page -->
-		<section class="container-fluid" id="about">
+		<section class="container-fluid sec-text-color" id="about">
 			<div class="row">
 			 	<h2 class="sec-font fw-700 mb-2 header-two">ABOUT</h2>
 
@@ -112,8 +116,9 @@
 			<!-- About text -->
 				<div class="col-xs-12 col-md-6">
 					<p>Hi, I'm Olga and I create websites.</p>
-					<p>I design clean, minimal and user-friendly interfaces for web, and I can write the code that brings them to life.</p>
-					<p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod nostrum pariatur tempore, illum explicabo labore neque eligendi nobis error at, beatae provident ab sequi quasi recusandae corrupti tempora atque nihil!</p>
+					<p>Graduated from Yoobee School of Design (former Natcoll), received my diploma with distinction (yehh-yeeh).</p>
+					<p>I design clean, minimal and user-friendly interfaces for web, and then I write the code that brings them to life.</p>
+					<p class="mb-2">Also I have a biologist background (that's why jellyfish, ahh..).</p>
 
 					<ul>
 						<li>Am I currently employed?</li>
@@ -128,85 +133,31 @@
 		<section class="container-fluid" id="portfolio">
 			<div class="row">
 				<h2 class="sec-font fw-700 mb-2 header-one">PORTFOLIO</h2>
-	
-			
-				<div class="col-xs-12 col-md-6">
-					<div class="placeholder"></div>
-				</div>
 
-				<div class="col-xs-12 col-md-3">
-					<div class="placeholder"></div>
-				</div>
+				<ul class="grid effect-6" id="grid" ng-controller="MainController">
 
-				<div class="col-xs-12 col-md-3">
-					<div class="placeholder"></div>
-				</div>
+					<li ng-repeat="project in projects">
+						<div class="project-tyle">
+							<img ng-src="{{ project.img }}" alt="{{ project.imgAlt }}" title="{{ project.imgTitle }}">
 
-				<div class="col-xs-12 col-md-3">
-					<div class="placeholder"></div>
-				</div>
-
-				<div class="col-xs-12 col-md-6">
-					<div class="placeholder"></div>
-				</div>
-
-				<div class="col-xs-12 col-md-3">
-					<div class="placeholder"></div>
-				</div>
-
-				<div class="col-xs-12 col-md-3">
-					<div class="placeholder"></div>
-				</div>
-
-				<div class="col-xs-12 col-md-3">
-					<div class="placeholder_2"></div>
-					<div class="placeholder_2"></div>
-				</div>
-
-				<!-- <div class="col-xs-12 col-md-3">
-					<div class="placeholder"></div>
-				</div> -->
-
-				<div class="col-xs-12 col-md-3">
-					<div class="placeholder"></div>
-				</div>
-
-				<div class="col-xs-12 col-md-3">
-					<div class="placeholder"></div>
-				</div>
-
-				<!-- <div class="content">
-					<div class="grid">
-						<div class="grid__item" data-size="10%x443">
-							<a href="test/original/1.jpg" class="img-wrap"><img src="test/thumbs/1.jpg" alt="img01" /></a>
-						</div>
-						<div class="grid__item" data-size="800x416">
-							<a href="test/original/2.jpg" class="img-wrap"><img src="test/thumbs/2.jpg" alt="img02" /></a>
-						</div>
-						<div class="grid__item" data-size="330x489">
-							<a href="test/original/3.jpg" class="img-wrap"><img src="test/thumbs/3.jpg" alt="img03" /></a>
-						</div>
-						<div class="grid__item" data-size="637x449">
-							<a href="test/original/4.jpg" class="img-wrap"><img src="test/thumbs/4.jpg" alt="img04" /></a>
-						</div>
-					</div>
-
-					<div class="preview">
-								<button class="action action--close">
-									<i><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></i>
-									<span class="sr-only">Close</span>
-								</button>
-								<div class="description description--preview"></div>
+							<div class="project-infobox">
+								<h3 class="sec-font">{{ project.title }}</h3>
+								<p class="used-tools fw-700">
+									{{ project.tools }}
+								</p>
 							</div>
-				</div> -->
+						</div>
+					</li>
+
+				</ul>	
 
 			</div>
 		</section>
 
 	<!-- Contacts Page -->
-		<section class="container-fluid" id="contacts">
+		<section class="container-fluid text-color-bg " id="contacts">
 			<div cass="row">
-				<h2 class="sec-font fw-700 mb-2">CONTACTS</h2>
+				<h2 class="sec-font fw-700 header-one mb-2">CONTACTS</h2>
 		
 			<!-- Form -->
 				<div class="col-xs-12 col-md-6">
@@ -287,7 +238,23 @@
 <!-- jQuery -->	
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
+<!-- Gallery -->
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/imagesloaded.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/AnimOnScroll.js"></script>
+
+
+
 	<script type="text/javascript" src="dist/assets/js/main.min.js"></script>
+
+
+	<!-- Modules -->
+    <script src="js/app.js"></script>
+	<!-- Controllers -->
+    <script src="js/controllers/MainController.js"></script>
+
+
 	<script>
 	    jQuery(document).ready(function($){
 	        $.iMissYou({

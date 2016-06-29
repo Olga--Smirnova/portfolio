@@ -2,10 +2,16 @@
 	| COLOR CLASSES
 -----------------------------------------------------------------*/
 .text-color {
-	color: $text-color;
+	color: $text-color !important;
+}
+.sec-text-color {
+	color: $sec-text-color !important;
 }
 .main-color-bg {
-	background-color: $main-color;
+	background-color: $main-color !important;
+}
+.text-color-bg {
+	background-color: $text-color !important;
 }
 
 .header-one {
@@ -14,7 +20,7 @@
 }
 .header-two {
 	color: $blue;
-    text-shadow: -4px 5px 0 $white;
+    text-shadow: -4px 5px 0 $dark-red;
 }
 
 
@@ -41,8 +47,8 @@
 	| TEXT CLASSES
 -----------------------------------------------------------------*/
 .main-font {
-	/*font-family: 'Muli', sans-serif;*/
-	font-family: 'Dosis', sans-serif;
+	font-family: 'Muli', sans-serif;
+	/*font-family: 'Dosis', sans-serif;*/
 }
 .sec-font {
 	/*font-family: 'Philosopher', sans-serif;*/
